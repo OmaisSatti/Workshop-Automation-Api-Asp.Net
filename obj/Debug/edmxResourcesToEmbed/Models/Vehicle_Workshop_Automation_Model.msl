@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Vehicle_WorkShop_AutomationModelStoreContainer" CdmEntityContainer="Vehicle_WorkShop_AutomationEntities">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="Vehicle_WorkShop_AutomationModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Mobile_No" ColumnName="Mobile_No" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="Vehicle_WorkShop_AutomationModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Mobile_No" ColumnName="Mobile_No" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mechanics">
+      <EntityTypeMapping TypeName="Vehicle_WorkShop_AutomationModel.Mechanic">
+        <MappingFragment StoreEntitySet="Mechanic">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Mobile_No" ColumnName="Mobile_No" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mechanic_Service">
+      <EntityTypeMapping TypeName="Vehicle_WorkShop_AutomationModel.Mechanic_Service">
+        <MappingFragment StoreEntitySet="Mechanic_Service">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Mechanic_Mobile_No" ColumnName="Mechanic_Mobile_No" />
+          <ScalarProperty Name="Vehicle_Reg_No" ColumnName="Vehicle_Reg_No" />
+          <ScalarProperty Name="Service_Id" ColumnName="Service_Id" />
+          <ScalarProperty Name="Surveyor_Id" ColumnName="Surveyor_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Services">
+      <EntityTypeMapping TypeName="Vehicle_WorkShop_AutomationModel.Service">
+        <MappingFragment StoreEntitySet="Service">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Estimate" ColumnName="Estimate" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Surveyors">
+      <EntityTypeMapping TypeName="Vehicle_WorkShop_AutomationModel.Surveyor">
+        <MappingFragment StoreEntitySet="Surveyor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Mobile_No" ColumnName="Mobile_No" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehicle_Company">
+      <EntityTypeMapping TypeName="Vehicle_WorkShop_AutomationModel.Vehicle_Company">
+        <MappingFragment StoreEntitySet="Vehicle_Company">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehicle_Customer">
+      <EntityTypeMapping TypeName="Vehicle_WorkShop_AutomationModel.Vehicle_Customer">
+        <MappingFragment StoreEntitySet="Vehicle_Customer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Customer_Mobile_No" ColumnName="Customer_Mobile_No" />
+          <ScalarProperty Name="Reg_No" ColumnName="Reg_No" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Miles_Km" ColumnName="Miles_Km" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehicle_Name">
+      <EntityTypeMapping TypeName="Vehicle_WorkShop_AutomationModel.Vehicle_Name">
+        <MappingFragment StoreEntitySet="Vehicle_Name">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Company_Id" ColumnName="Company_Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Appointments">
+      <EntityTypeMapping TypeName="Vehicle_WorkShop_AutomationModel.Appointment">
+        <MappingFragment StoreEntitySet="Appointment">
+          <ScalarProperty Name="Total_Bill" ColumnName="Total_Bill" />
+          <ScalarProperty Name="MCheck" ColumnName="MCheck" />
+          <ScalarProperty Name="SCheck" ColumnName="SCheck" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CurrentMiles" ColumnName="CurrentMiles" />
+          <ScalarProperty Name="Miles" ColumnName="Miles" />
+          <ScalarProperty Name="Slot" ColumnName="Slot" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Customer_Mobile_No" ColumnName="Customer_Mobile_No" />
+          <ScalarProperty Name="Vehicle_Reg_No" ColumnName="Vehicle_Reg_No" />
+          <ScalarProperty Name="Bay_No" ColumnName="Bay_No" />
+          <ScalarProperty Name="Appointment_No" ColumnName="Appointment_No" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="App_Service">
+      <EntityTypeMapping TypeName="Vehicle_WorkShop_AutomationModel.App_Service">
+        <MappingFragment StoreEntitySet="App_Service">
+          <ScalarProperty Name="Surveyor_Suggestion" ColumnName="Surveyor_Suggestion" />
+          <ScalarProperty Name="Customer_Suggestion" ColumnName="Customer_Suggestion" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="App_No" ColumnName="App_No" />
+          <ScalarProperty Name="Service_Id" ColumnName="Service_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
